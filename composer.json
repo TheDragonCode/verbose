@@ -1,0 +1,49 @@
+{
+    "name": "andrey-helldar/verbose",
+    "description": "Displaying verbose messages",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "debug",
+        "logging",
+        "logs",
+        "message",
+        "messages",
+        "verbose"
+    ],
+    "authors": [
+        {
+            "name": "Andrey Helldar",
+            "email": "helldar@ai-rus.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/andrey-helldar/verbose/issues",
+        "source": "https://github.com/andrey-helldar/verbose"
+    },
+    "require": {
+        "php": "^7.2.5|^8.0",
+        "andrey-helldar/support": "^2.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.0",
+        "phpunit/phpunit": "^9.0",
+        "composer/composer": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Helldar\\Verbose\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
