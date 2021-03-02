@@ -34,14 +34,14 @@ Or manually update `require` block of `composer.json` and run `composer update`.
 
     Coming soon...
 
-[badge_downloads]:      https://img.shields.io/packagist/dt/helldar/verbose.svg?style=flat-square
+[badge_downloads]:      https://img.shields.io/packagist/dt/andrey-helldar/verbose.svg?style=flat-square
 
-[badge_license]:        https://img.shields.io/packagist/l/helldar/verbose.svg?style=flat-square
+[badge_license]:        https://img.shields.io/packagist/l/andrey-helldar/verbose.svg?style=flat-square
 
-[badge_stable]:         https://img.shields.io/github/v/release/helldar/verbose?label=stable&style=flat-square
+[badge_stable]:         https://img.shields.io/github/v/release/andrey-helldar/verbose?label=stable&style=flat-square
 
 [badge_unstable]:       https://img.shields.io/badge/unstable-dev--main-orange?style=flat-square
 
 [link_license]:         LICENSE
 
-[link_packagist]:       https://packagist.org/packages/helldar/verbose
+[link_packagist]:       https://packagist.org/packages/andrey-helldar/verbose
