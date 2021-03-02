@@ -10,7 +10,6 @@ Displaying verbose messages
 ## Table of contents
 
 * [Installation](#installation)
-* [Using](#using)
 
 ## Installation
 
@@ -29,10 +28,6 @@ Or manually update `require` block of `composer.json` and run `composer update`.
     }
 }
 ```
-
-## Using
-
-    Coming soon...
 
 [badge_downloads]:      https://img.shields.io/packagist/dt/andrey-helldar/verbose.svg?style=flat-square
 
