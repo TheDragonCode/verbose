@@ -36,7 +36,7 @@ Or manually update `require` block of `composer.json` and run `composer update`.
 use Helldar\Verbose\Services\Logger;
 use Helldar\Verbose\Facades\Log;
 
-Logger::io($this->io);
+Logger::io($this->getIO());
 
 Log::write('foo');
 Log::write('bar');
