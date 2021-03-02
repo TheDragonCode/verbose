@@ -10,6 +10,7 @@ Displaying verbose messages
 ## Table of contents
 
 * [Installation](#installation)
+* [Using](#using)
 
 ## Installation
 
@@ -27,6 +28,19 @@ Or manually update `require` block of `composer.json` and run `composer update`.
         "andrey-helldar/verbose": "^1.0"
     }
 }
+```
+
+## Using
+
+```php
+use Helldar\Verbose\Services\Logger;
+use Helldar\Verbose\Facades\Log;
+
+Logger::io($this->io);
+
+Log::write('foo');
+Log::write('bar');
+Log::write('baz');
 ```
 
 [badge_downloads]:      https://img.shields.io/packagist/dt/andrey-helldar/verbose.svg?style=flat-square

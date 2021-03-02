@@ -7,24 +7,22 @@ use Composer\IO\IOInterface;
 final class Logger
 {
     /** @var \Composer\IO\IOInterface */
-    protected $io;
+    protected static $io;
 
-    public function io(IOInterface $io): self
+    public static function io(IOInterface $io): void
     {
-        $this->io = $io;
-
-        return $this;
+        self::$io = $io;
     }
 
     public function write($messages): void
     {
         if ($this->allow()) {
-            $this->io->writeError($messages);
+            self::$io->writeError($messages);
         }
     }
 
     protected function allow(): bool
     {
-        return $this->io && $this->io->isDebug();
+        return self::$io && self::$io->isDebug();
     }
 }
