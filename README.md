@@ -25,7 +25,7 @@ Or manually update `require` block of `composer.json` and run `composer update`.
 ```json
 {
     "require": {
-        "andrey-helldar/verbose": "^1.0"
+        "andrey-helldar/verbose": "^1.1"
     }
 }
 ```
