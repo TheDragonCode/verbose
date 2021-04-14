@@ -12,6 +12,9 @@ final class Logger
     /** @var \Composer\IO\IOInterface|\Symfony\Component\Console\Output\OutputInterface */
     protected static $io;
 
+    /**
+     * @param  \Composer\IO\IOInterface|\Symfony\Component\Console\Output\OutputInterface  $io
+     */
     public static function io($io): void
     {
         if (! Instance::of($io, [IOInterface::class, OutputInterface::class])) {
