@@ -23,7 +23,7 @@
     },
     "require": {
         "php": "^7.2.5|^8.0",
-        "andrey-helldar/support": "^2.0|^3.0"
+        "andrey-helldar/support": "^3.19|^4.0"
     },
     "require-dev": {
         "composer/composer": "^2.0",
