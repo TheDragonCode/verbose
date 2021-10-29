@@ -2,7 +2,7 @@
 
 Displaying verbose messages
 
-<img src="https://preview.dragon-code.pro/TheDragonCode/verbose.svg?brand=laravel" alt="Verbose"/>
+<img src="https://preview.dragon-code.pro/TheDragonCode/verbose.svg?brand=php" alt="Verbose"/>
 
 [![Stable Version][badge_stable]][link_packagist]
 [![Unstable Version][badge_unstable]][link_packagist]
