@@ -2,6 +2,8 @@
 
 Displaying verbose messages
 
+<img src="https://preview.dragon-code.pro/TheDragonCode/verbose.svg?brand=laravel" alt="Verbose"/>
+
 [![Stable Version][badge_stable]][link_packagist]
 [![Unstable Version][badge_unstable]][link_packagist]
 [![Total Downloads][badge_downloads]][link_packagist]
