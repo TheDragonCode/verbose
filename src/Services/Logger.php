@@ -16,7 +16,7 @@ final class Logger
     protected $backtrace_level = 5;
 
     /**
-     * @param  \Composer\IO\IOInterface|\Symfony\Component\Console\Output\OutputInterface  $io
+     * @param \Composer\IO\IOInterface|\Symfony\Component\Console\Output\OutputInterface $io
      */
     public static function io($io): void
     {
