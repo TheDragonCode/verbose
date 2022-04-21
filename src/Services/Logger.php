@@ -1,24 +1,20 @@
 <?php
 
-namespace Helldar\Verbose\Services;
+namespace DragonCode\Verbose\Services;
 
 use Composer\IO\IOInterface;
-use Helldar\Support\Facades\Helpers\Arr;
-use Helldar\Support\Facades\Helpers\Instance;
-use Helldar\Verbose\IncorrectOutputInterfaceException;
+use DragonCode\Support\Facades\Helpers\Arr;
+use DragonCode\Support\Facades\Instances\Instance;
+use DragonCode\Verbose\IncorrectOutputInterfaceException;
 use Symfony\Component\Console\Output\OutputInterface;
 
-final class Logger
+class Logger
 {
-    /** @var \Composer\IO\IOInterface|\Symfony\Component\Console\Output\OutputInterface */
-    protected static $io;
+    protected static OutputInterface|IOInterface $io;
 
-    protected $backtrace_level = 5;
+    protected int $backtrace_level = 5;
 
-    /**
-     * @param \Composer\IO\IOInterface|\Symfony\Component\Console\Output\OutputInterface $io
-     */
-    public static function io($io): void
+    public static function io(IOInterface|OutputInterface $io): void
     {
         if (! Instance::of($io, [IOInterface::class, OutputInterface::class])) {
             throw new IncorrectOutputInterfaceException($io);
@@ -27,7 +23,7 @@ final class Logger
         self::$io = $io;
     }
 
-    public function write($messages): void
+    public function write(array|string $messages): void
     {
         if (! $this->allow()) {
             return;
@@ -47,10 +43,10 @@ final class Logger
         return self::$io && self::$io->isDebug();
     }
 
-    protected function message($messages, string $caller)
+    protected function message(array|string $messages, string $caller): array|string
     {
         if (is_array($messages)) {
-            array_push($messages, $caller);
+            $messages[] = $caller;
 
             return $messages;
         }

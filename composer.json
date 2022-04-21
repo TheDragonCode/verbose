@@ -1,5 +1,5 @@
 {
-    "name": "andrey-helldar/verbose",
+    "name": "dragon-code/verbose",
     "description": "Displaying verbose messages",
     "license": "MIT",
     "type": "library",
@@ -18,12 +18,12 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/andrey-helldar/verbose/issues",
-        "source": "https://github.com/andrey-helldar/verbose"
+        "issues": "https://github.com/TheDragonCode/verbose/issues",
+        "source": "https://github.com/TheDragonCode/verbose"
     },
     "require": {
-        "php": "^7.2.5 || ^8.0",
-        "dragon-code/support": "^4.0 || ^5.0"
+        "php": "^8.0",
+        "dragon-code/support": "^6.1"
     },
     "require-dev": {
         "composer/composer": "^2.0",
@@ -35,7 +35,7 @@
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "Helldar\\Verbose\\": "src"
+            "DragonCode\\Verbose\\": "src"
         }
     },
     "autoload-dev": {

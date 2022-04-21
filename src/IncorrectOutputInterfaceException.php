@@ -1,12 +1,12 @@
 <?php
 
-namespace Helldar\Verbose;
+namespace DragonCode\Verbose;
 
 use Composer\IO\IOInterface;
 use InvalidArgumentException;
 use Symfony\Component\Console\Output\OutputInterface;
 
-final class IncorrectOutputInterfaceException extends InvalidArgumentException
+class IncorrectOutputInterfaceException extends InvalidArgumentException
 {
     public function __construct($class)
     {
