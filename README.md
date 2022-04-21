@@ -14,7 +14,7 @@ Displaying verbose messages
 To get the latest version of `Verbose`, simply require the project using [Composer](https://getcomposer.org):
 
 ```bash
-$ composer require andrey-helldar/verbose
+$ composer require dragon-code/verbose
 ```
 
 Or manually update `require` block of `composer.json` and run `composer update`.
@@ -22,7 +22,7 @@ Or manually update `require` block of `composer.json` and run `composer update`.
 ```json
 {
     "require": {
-        "andrey-helldar/verbose": "^1.1"
+        "dragon-code/verbose": "^4.0"
     }
 }
 ```
@@ -30,8 +30,8 @@ Or manually update `require` block of `composer.json` and run `composer update`.
 ## Using
 
 ```php
-use Helldar\Verbose\Services\Logger;
-use Helldar\Verbose\Facades\Log;
+use DragonCode\Verbose\Services\Logger;
+use DragonCode\Verbose\Facades\Log;
 
 Logger::io($this->getIO());
 
@@ -44,12 +44,6 @@ Log::write('baz');
 
 This package is licensed under the [MIT License](LICENSE).
 
-
-## For Enterprise
-
-Available as part of the Tidelift Subscription.
-
-The maintainers of `andrey-helldar/verbose` and thousands of other packages are working with Tidelift to deliver commercial support and maintenance for the open source packages you use to build your applications. Save time, reduce risk, and improve code health, while paying the maintainers of the exact packages you use. [Learn more](https://tidelift.com/subscription/pkg/packagist-andrey-helldar-verbose?utm_source=packagist-andrey-helldar-verbose&utm_medium=referral&utm_campaign=enterprise&utm_term=repo).
 
 [badge_downloads]:      https://img.shields.io/packagist/dt/andrey-helldar/verbose.svg?style=flat-square
 
